@@ -7,7 +7,7 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;  
-    background-attachment:fixed; 
+
     
 }
 /*--HEADER--SECTION---*/
@@ -81,39 +81,67 @@ body{
 }
 /*Contact*/
 #main__contact{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background:linear-gradient(to top, #000 30%, transparent 70%);
     height: 250px;
     border: 2px solid #000;
 }
 .contact__h2{
+    margin: auto;
+    text-align: center;
     font-size: 30px;
+    color: wheat;
 
 }
 .contact__form{
-
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    
 }
 .contact__div{
-
+    flex-direction: row;
+    width: 100%;
 }
-.contact__input{
 
+.contact__input{
+   
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
 }
 #area{
+    width: 200px;
+    height: 120px;
+    overflow: scroll;
+    justify-content: center;
+    margin: auto;
 
 }
 
 /*---FOOTER--SECTION*/
 .footer{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    text-align: center;
     height: 120px;
     background: #000;
+    
 }
 .footer__tittle{
     font-size: 20px;
     color: wheat;
+    margin-bottom: 20px;
 
 }
 .footer__link{
     color: wheat;
-    text-decoration: none;
+    font-size: 20px;
+    margin-bottom: 20px;
 
 }
