@@ -9,13 +9,14 @@ body{
 .header{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 500px;
     border: 2px solid #000;
 
 }
 .header__logo{
+    margin-top: 30px;
     background-color: #000;
     border-radius: 50%;
     width: 200px;
@@ -28,17 +29,28 @@ body{
 
 }
 .header__div{
-
-
+    height: 60px;
+    border: 2px solid #000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 .header__nav{
     height: 60px;
-
+    align-items: center;
+    justify-content: space-evenly;
+    border: 2px solid #000;
+    display: flex;
+    width: 100%;
 
 }
 .header__link{
+    background-color: #000;
+    font-size: 14px;
     text-decoration: none;
-
+    border: 2px solid #000;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
 }
 /*----MAIN--SECTION*/
 .main{
