@@ -10,6 +10,12 @@ body{
     
     
 }
+@font-face {
+    font-family: 'amatic';  
+    src: url(Amatic_SC/AmaticSC-Bold.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
 /*--HEADER--SECTION---*/
 .header{
     background:linear-gradient(to bottom, #000 70%, transparent 90%);
@@ -27,7 +33,7 @@ body{
     border-radius: 50%;
     width: 200px;
     height: 200px;
-    background-color: rgba(255, 225, 0, 0.894);
+    background-color: #ffe100e4;
     box-shadow:
     0 0 20px rgba(255, 213, 0, 0.8),
     0 0 30px rgba(255, 255, 0, 0.9),
@@ -35,36 +41,42 @@ body{
     
 }
 .header__tittle{
+    font-family: sans-serif;
     font-size: 37px;
     color: wheat;
 
 }
 .header__div{
     height: 60px;
-
+    
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    border-radius: 25px;
 }
 .header__nav{
     height: 60px;
-    align-items: end;
+    align-items: center;
     justify-content: space-evenly;
-
+   
     display: flex;
     width: 100%;
-
+    border-radius: 25px;
 }
 .header__link{
-    background-color: #d7f8185e;
-    font-size: 24px;
+    
+    font-family:amatic;
+    background-color:rgba(179, 196, 24, 0.543);
+    font-size: 30px;
+    
     text-decoration: none;
-
+    color: wheat;
     -webkit-box-shadow:0px 0px 166px 65px rgba(179,196,24,0.9);
--moz-box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);
-box-shadow: 0px 0px 166px 75px rgba(179,196,24,0.9);
-    border-radius: 15px;
+    -moz-box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);
+    box-shadow: 0px 0px 166px 75px rgba(179,196,24,0.9);
+        border-radius: 25px;*/
+  
 }
 /*----MAIN--SECTION*/
 .main{
@@ -75,21 +87,45 @@ box-shadow: 0px 0px 166px 75px rgba(179,196,24,0.9);
 }
 #main__info{
     height: 200px;
-    
-    -webkit-box-shadow:0px 0px 166px 55px rgba(179,196,24,0.9);
+    overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: auto;
+   /* -webkit-box-shadow:0px 0px 166px 55px rgba(179,196,24,0.9);
 -moz-box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);
-box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);
+box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);*/
 color: wheat;
-font-size: 20px;
-text-wrap: pretty;
+font-size: 18px;
+text-wrap: balance;
+text-align: center;
 }
 /*Booking*/
 #main__booking{
     height: 200px;
-    border: 2px solid #000;
-    -webkit-box-shadow:0px 0px 166px 55px rgba(179,196,24,0.9);
--moz-box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);
-box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+   /* -webkit-box-shadow:0px 0px 166px 55px rgba(179,196,24,0.9);
+-moz-box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);*/
+/*box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);*/
+}
+.h2name{
+    font-size: 25px;
+    font-family: sans-serif;
+    color: wheat;
+    text-decoration: underline;
+    
+}
+label{
+    font-family: sans-serif;
+    font-size: 25px;
+    color: wheat;
+}
+input[type="date"]{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    background-color: #4776d57e;
+    border-radius: 25px;
 }
 /*Contact*/
 #main__contact{
@@ -99,13 +135,15 @@ box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);
     align-items: center;
     background:linear-gradient(to top, #000 30%, transparent 70%);
     height: 250px;
-    border: 2px solid #000;
+    
 }
 .contact__h2{
+    font-family: sans-serif;
     margin: auto;
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
     color: wheat;
+    text-decoration: underline;
 
 }
 .contact__form{
@@ -113,26 +151,36 @@ box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding-left: 20px;
     
 }
 .contact__div{
     flex-direction: row;
     width: 100%;
 }
-
+input::placeholder{
+    color: wheat;
+}
+#area::placeholder{
+    color: wheat;
+}
 .contact__input{
-   
+    background-color:  #4776d57e;
     padding: 8px;
     border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 16px;
 }
 #area{
     width: 200px;
     height: 120px;
-    
+    background-color: #4776d57e;
     justify-content: center;
     margin: auto;
-
+    border-radius: 16px;
+}
+.buttom{
+    width: 100px;
+    height: 30px;
 }
 
 /*---FOOTER--SECTION*/
@@ -157,5 +205,11 @@ box-shadow: 0px 0px 166px 55px rgba(179,196,24,0.9);
     color: wheat;
     font-size: 20px;
     margin-bottom: 20px;
+
+}
+.logo__hub{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 
 }
